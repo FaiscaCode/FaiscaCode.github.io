@@ -1,0 +1,52 @@
+body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      
+
+      
+      background-image: url("images/igreja_matriz_do_montijo_-_portugal_49980586123.jpg");
+      background-size: cover;      
+      background-position: center; 
+      background-repeat: no-repeat; 
+    }
+    
+
+    .fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+h1{
+    font-size: 8rem;  
+      color: white;    
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+      
+    
+      
+      
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end
+    
+}
