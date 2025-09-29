@@ -50,3 +50,15 @@ nav{
     justify-content: flex-end
     
 }
+
+.fotografias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fotografias img {
+  width: 150px;
+  border-radius: 20px;
+}

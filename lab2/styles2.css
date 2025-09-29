@@ -1,0 +1,88 @@
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border: none;
+  display: block;
+}
+
+.fotografias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.fotografias img {
+  width: 150px;
+  border-radius: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 50%; /* Adjust as needed */
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: darkblue;
+}
+
+h2 {
+  color: green;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font: 16px Arial, sans-serif;
+}
+
+nav {
+  background-color: black;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  color: green;
+  background-color: white; /* Link color on hover */
+  box-shadow: 0 10px 20px rgba(245, 245, 245, 0.5); /* Larger oval shadow */
+  border-radius: 15px; /* Makes the background oval-shaped */
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
