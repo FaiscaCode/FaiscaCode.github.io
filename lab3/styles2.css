@@ -1,34 +1,50 @@
 body {
   margin: 0;
-  padding: 0;
+  
   text-align: center;
   font: 16px Arial, sans-serif;
 }
 
- header {
-    height: 100px; /* Reduced height for mobile */
-    background-color: black; /* Black rectangle background */
-    background-image: url('images/bandeira_montijo.png');
-    background-size: 120px 80px; /* Icon size */
-    background-position: 10px center; /* Icon on the left */
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Align dropdown to the right */
-    position: relative;
-  }
+header {
+  height: 100px; /* Reduced height for mobile */
+  background-color: black; /* Black rectangle background */
+  background-image: url('images/bandeira_montijo.png');
+  background-size: 120px 80px; /* Icon size */
+  background-position: 10px center; /* Icon on the left */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align dropdown to the right */
+  position: relative;
+}
 
 .fotografias {
-  display: flex;
-  justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .fotografias img {
-  width: 150px;
-  border-radius: 20px;
+  height: 200px;
+  
+}
+
+.fotografias img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+iframe {
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  width: 80%;
 }
 
 .multimedia {
@@ -107,56 +123,56 @@ footer{
   padding: 100px;;
 }
 
-
 section {
-            max-width: 600px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-        h3 {
-            text-align: center;
-            color: #333;
-            font-family: Arial, sans-serif;
-        }
+h3 {
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
 
-        .poema-container {
-            padding: 1rem;
-            font-family: Georgia, serif;
-            line-height: 1.6;
-        }
+.poema-container {
+  padding: 1rem;
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
 
-        /* Estilização com pseudo-classe :nth-child */
-        .poema-container p:nth-child(odd) {
-            color: #2c3e50;
-            font-style: italic;
-            margin-left: 20px;
-        }
+/* Estilização com pseudo-classe :nth-child */
+.poema-container p:nth-child(odd) {
+  color: #2c3e50;
+  font-style: italic;
+  margin-left: 20px;
+}
 
-        .poema-container p:nth-child(even) {
-            color: #8e44ad;
-            font-weight: bold;
-            margin-right: 20px;
-        }
+.poema-container p:nth-child(even) {
+  color: #8e44ad;
+  font-weight: bold;
+  margin-right: 20px;
+}
 
-        .poema-container p:nth-child(1) {
-            font-size: 1.2em;
-            text-transform: uppercase;
-        }
+.poema-container p:nth-child(1) {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
 
-        .poema-container p:nth-child(4n) {
-            background-color: #ecf0f1;
-            padding: 0.5rem;
-            border-left: 4px solid #3498db;
-        }
-        .poema-container p:nth-child(4n+1) {
-            background-color: #f9ebea;
-            padding: 0.5rem;
-            border-left: 4px solid #e74c3c;
-        }
+.poema-container p:nth-child(4n) {
+  background-color: #ecf0f1;
+  padding: 0.5rem;
+  border-left: 4px solid #3498db;
+}
+
+.poema-container p:nth-child(4n+1) {
+  background-color: #f9ebea;
+  padding: 0.5rem;
+  border-left: 4px solid #e74c3c;
+}
 
 /* Mobile styles (applied for screens <= 768px) */
 @media screen and (max-width: 768px) {

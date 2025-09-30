@@ -1,0 +1,179 @@
+ /* Paleta de cores: 60% #f0f4f8 (dominante), 30% #a3bffa (complementar), 10% #ff6f61 (acento) */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Menu Nav */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: green; /* 30% complementar */
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none; /* Remove bullets */
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none; /* Remove sublinhados */
+      font-size: 1.1rem;
+      padding: 5px 10px;
+    }
+    nav ul li a:focus, nav ul li a:hover {
+     /* Pequeno */
+      padding: 10px 20px;
+      background-color: white; /* Acento 10% */
+      color: green;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    /* Sections gerais */
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      scroll-behavior: smooth;
+      padding: 0 20px;
+    }
+
+    /* Início (Hero) */
+    #inicio {
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+    }
+    #inicio .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.6); /* Legibilidade sobre imagem */
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    #inicio h1 {
+      font-size: 3rem; /* Grande - Hierarquia visual */
+      margin: 0;
+    }
+    #inicio p {
+      font-size: 1.5rem; /* Médio */
+    }
+    #inicio button {
+      font-size: 1rem; /* Pequeno */
+      padding: 10px 20px;
+      background-color: green; /* Acento 10% */
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    #inicio button:hover {
+      background-color: white;
+      color: green; /* Variação do acento */
+    }
+
+    /* Projetos */
+    #projetos {
+      background-color: #f0f4f8; /* 60% dominante */
+      flex-direction: column;
+    }
+    #projetos h2 {
+      font-size: 2.5rem;
+      color: green; /* 30% complementar */
+    }
+    .project-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background-color: #fff;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+    }
+    .card h3 {
+      font-size: 1.5rem;
+      color: green;
+    }
+    .card p {
+      font-size: 1rem;
+      color: #333;
+    }
+    .card a {
+      color: lightgreen;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Interfaces Web (Disciplina) */
+    #disciplina {
+      background-color: green; /* 30% complementar */
+      flex-direction: column;
+    }
+    #disciplina h2 {
+      font-size: 2.5rem;
+      color: #f0f4f8;
+    }
+    #disciplina .content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    #disciplina p {
+      font-size: 1.2rem;
+      color: #fff;
+      max-width: 600px;
+    }
+    #disciplina img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Media Query para Responsividade */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      .project-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      #disciplina .content {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    footer{
+        text-align: center;
+    }
+    
